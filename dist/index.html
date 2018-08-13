@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
@@ -35,23 +36,13 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="work.html" class="nav-link">
-            Projects
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="bookshelf.html" class="nav-link">
-            Bookshelf
-          </a>
-        </li>
-        <li class="nav-item">
           <a href="https://blog.garethnewman.com" class="nav-link">
             Blog
           </a>
         </li>
         <li class="nav-item">
           <a href="contact.html" class="nav-link">
-            Get in touch
+            Contact
           </a>
         </li>
       </ul>
@@ -65,8 +56,12 @@
       <span class="text-secondary">Newman</span>
     </h1>
     <h2 class="sm-heading">
-      SQL Server DBA, Programmer, Father;
+      <div id="typed-strings">
+        <p>PS C:\> SQL Server DBA, Programmer, Father & all-round tech geek</p>
+      </div>
+      <span id="typed"></span>
     </h2>
+
     <div class="icons">
       <a href="https://www.linkedin.com/in/gareth-n-68603954/">
         <i class="fab fa-linkedin fa-2x"></i>
@@ -78,6 +73,13 @@
   </main>
 
   <script src="js/main.js"></script>
+  <script>
+    var typed = new Typed('#typed', {
+      stringsElement: '#typed-strings',
+      typeSpeed: 50,
+      cursorChar: '_',
+    });
+  </script>
 </body>
 
 </html>
