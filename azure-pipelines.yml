@@ -12,12 +12,6 @@ pool:
 steps:
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(build.sourcesDirectory)'
+    rootFolderOrFile: '$(build.sourcesDirectory)/dist/'
     includeRootFolder: false
 - task: PublishBuildArtifacts@1
-
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: '$(build.sourcesDirectory)/dist/'
-    Contents: '**'
-    TargetFolder: '$(build.sourcesDirectory)/builds/'
