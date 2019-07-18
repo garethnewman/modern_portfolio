@@ -18,6 +18,6 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'modern_portfolio/dist/'
+    SourceFolder: '$(build.sourcesDirectory)/dist/'
     Contents: '**'
-    TargetFolder: '/builds/'
+    TargetFolder: '$(build.sourcesDirectory)/builds/'
